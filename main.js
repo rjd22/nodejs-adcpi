@@ -11,6 +11,6 @@ var mcp = new mcp3424(address, gain, resolution, '/dev/i2c-1');
 
 setInterval(function(){
     var voltage = ((mcp.getMv(0) * (lsb / pga)) * 2.471);
-    console.log('Reading: ' + voltage);
+    console.log('Reading: ' + mcp.getVoltage(0));
 }, 1000);
 
