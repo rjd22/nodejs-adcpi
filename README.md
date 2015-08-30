@@ -6,7 +6,7 @@ https://www.abelectronics.co.uk/products/17/Raspberry-Pi--Raspberry-Pi-2-Model-B
 Example usage:
 
 ```js
-var mcp3424 = require('./lib/mcp3424');
+var mcp3424 = require('./mcp3424');
 
 var address = 0x68;
 var gain = 0; //{0,1,2,3} represents {x1,x2,x4,x8}
